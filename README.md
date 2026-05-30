@@ -1,6 +1,6 @@
 ### Sobre mim:
 
-Olá! Sou o Gabriel, estudante de Engenharia de Software na Universidade de Brasília (UnB), com foco em arquitetar soluções eficientes para problemas complexos. Tenho forte interesse nas áreas de Inteligência Artificial (Machine Learning / Deep Learning) e Cloud Computing, aliando essa forte base analítica a uma experiência sólida em desenvolvimento web e backend. Atualmente, também atuo como pesquisador em Iniciação Científica.
+Olá! Sou o Gabriel, estudante de Engenharia de Software na Universidade de Brasília (UnB), com foco em arquitetar soluções eficientes para problemas complexos. Tenho forte interesse nas áreas de Inteligência Artificial (Machine Learning / Deep Learning), Cloud Computing e Sistemas Embarcados, aliando essa forte base analítica a uma experiência sólida em desenvolvimento web e backend. Atualmente, também atuo como pesquisador em Iniciação Científica.
 
 ---
 
