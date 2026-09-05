@@ -4,7 +4,7 @@
 
 <img alt="Inteligência Artificial, Cloud Computing e Análise de Dados" src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;size=18&amp;duration=3000&amp;pause=1000&amp;color=A78BFA&amp;center=true&amp;vCenter=true&amp;width=650&amp;lines=Intelig%C3%AAncia+Artificial+%7C+Cloud+%7C+Dados;Machine+Learning+%7C+Deep+Learning;Da+pesquisa+ao+desenvolvimento+de+solu%C3%A7%C3%B5es">
 
-<a href="https://www.linkedin.com/in/gabriel-ferreira-011356385/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-12121a?style=for-the-badge&amp;logo=linkedin&amp;logoColor=A78BFA"></a>
+<a href="https://www.linkedin.com/in/gabriel-ferreira-222591397/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-12121a?style=for-the-badge&amp;logo=linkedin&amp;logoColor=A78BFA"></a>
 <a href="mailto:diangellis4@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-12121a?style=for-the-badge&amp;logo=gmail&amp;logoColor=A78BFA"></a>
 <a href="https://github.com/diangellis?tab=followers"><img alt="Seguidores no GitHub" src="https://img.shields.io/github/followers/diangellis?style=for-the-badge&amp;label=Followers&amp;labelColor=12121a&amp;color=6D28D9&amp;logo=github&amp;logoColor=A78BFA"></a>
 
