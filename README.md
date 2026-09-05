@@ -23,17 +23,26 @@ Dedico-me à pesquisa acadêmica por meio de **Iniciação Científica**, com in
 
 ## Tecnologias e ferramentas
 
-**Linguagens**
+<div align="center">
 
-<img alt="Python" src="https://img.shields.io/badge/Python-12121a?style=for-the-badge&amp;logo=python&amp;logoColor=A78BFA"> <img alt="Java" src="https://img.shields.io/badge/Java-12121a?style=for-the-badge&amp;logo=openjdk&amp;logoColor=A78BFA"> <img alt="C" src="https://img.shields.io/badge/C-12121a?style=for-the-badge&amp;logo=c&amp;logoColor=A78BFA"> <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-12121a?style=for-the-badge&amp;logo=cplusplus&amp;logoColor=A78BFA"> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-12121a?style=for-the-badge&amp;logo=javascript&amp;logoColor=A78BFA"> <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-12121a?style=for-the-badge&amp;logo=typescript&amp;logoColor=A78BFA">
+<h4>Linguagens</h4>
+<img alt="Python, Java, C, C++, JavaScript e TypeScript" src="https://skillicons.dev/icons?i=py,java,c,cpp,js,ts&amp;theme=dark" height="48">
 
-**Web e backend**
+<h4>Web e backend</h4>
+<img alt="HTML, CSS, React, Next.js e .NET" src="https://skillicons.dev/icons?i=html,css,react,nextjs,dotnet&amp;theme=dark" height="48">
 
-<img alt="HTML5" src="https://img.shields.io/badge/HTML5-12121a?style=for-the-badge&amp;logo=html5&amp;logoColor=A78BFA"> <img alt="CSS3" src="https://img.shields.io/badge/CSS3-12121a?style=for-the-badge&amp;logo=css&amp;logoColor=A78BFA"> <img alt="React" src="https://img.shields.io/badge/React-12121a?style=for-the-badge&amp;logo=react&amp;logoColor=A78BFA"> <img alt="Next.js" src="https://img.shields.io/badge/Next.js-12121a?style=for-the-badge&amp;logo=nextdotjs&amp;logoColor=A78BFA"> <img alt=".NET" src="https://img.shields.io/badge/.NET-12121a?style=for-the-badge&amp;logo=dotnet&amp;logoColor=A78BFA">
+<h4>Ferramentas</h4>
+<img alt="Git, GitHub, VS Code, IntelliJ IDEA, PyCharm e LaTeX" src="https://skillicons.dev/icons?i=git,github,vscode,idea,pycharm,latex&amp;theme=dark" height="48">
 
-**Ferramentas**
+</div>
 
-<img alt="Git" src="https://img.shields.io/badge/Git-12121a?style=for-the-badge&amp;logo=git&amp;logoColor=A78BFA"> <img alt="GitHub" src="https://img.shields.io/badge/GitHub-12121a?style=for-the-badge&amp;logo=github&amp;logoColor=A78BFA"> <img alt="VS Code" src="https://img.shields.io/badge/VS%20Code-12121a?style=for-the-badge&amp;logo=visualstudiocode&amp;logoColor=A78BFA"> <img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-12121a?style=for-the-badge&amp;logo=intellijidea&amp;logoColor=A78BFA"> <img alt="PyCharm" src="https://img.shields.io/badge/PyCharm-12121a?style=for-the-badge&amp;logo=pycharm&amp;logoColor=A78BFA"> <img alt="LaTeX" src="https://img.shields.io/badge/LaTeX-12121a?style=for-the-badge&amp;logo=latex&amp;logoColor=A78BFA">
+## Minhas contribuições
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake.svg">
+  <img width="100%" alt="Cobrinha percorrendo meu calendário de contribuições no GitHub" src="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake.svg">
+</picture>
 
 ## Explore meu GitHub
 
