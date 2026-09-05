@@ -39,9 +39,9 @@ Dedico-me à pesquisa acadêmica por meio de **Iniciação Científica**, com in
 ## Minhas contribuições
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake.svg">
-  <img width="100%" alt="Cobrinha percorrendo meu calendário de contribuições no GitHub" src="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake.svg?v=1">
+  <img width="100%" alt="Cobrinha percorrendo meu calendário de contribuições no GitHub" src="https://raw.githubusercontent.com/diangellis/diangellis/main/dist/github-snake.svg?v=1">
 </picture>
 
 ## Explore meu GitHub
