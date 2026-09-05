@@ -17,73 +17,21 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Gerar cobrinha dentro da grade e validar percurso
+      - name: Gerar animacoes
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: diangellis
+          outputs: |
+            dist/github-snake.svg?color_snake=#7C3AED&color_dots=#ebedf0,#ddd6fe,#c4b5fd,#8b5cf6,#6d28d9
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#A78BFA&color_dots=#161b22,#2e1065,#5b21b6,#7c3aed,#a78bfa
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python3 - <<'PY'
-          import json, os, urllib.request
-          from pathlib import Path
-          from xml.etree import ElementTree as ET
-          
-          query = '{ user(login: "diangellis") { contributionsCollection { contributionCalendar { weeks { contributionDays { weekday contributionCount contributionLevel } } } } } }'
-          request = urllib.request.Request('https://api.github.com/graphql', data=json.dumps({'query': query}).encode(), headers={'Authorization': 'Bearer ' + os.environ['GITHUB_TOKEN'], 'Content-Type': 'application/json'})
-          with urllib.request.urlopen(request, timeout=30) as response:
-              data = json.load(response)
-          if data.get('errors'):
-              raise RuntimeError(data['errors'])
-          weeks = data['data']['user']['contributionsCollection']['contributionCalendar']['weeks']
-          width, height = len(weeks), 7
-          levels = ['NONE', 'FIRST_QUARTILE', 'SECOND_QUARTILE', 'THIRD_QUARTILE', 'FOURTH_QUARTILE']
-          cells = {(x, d['weekday']): levels.index(d['contributionLevel']) for x, week in enumerate(weeks) for d in week['contributionDays']}
-          path = [(x, y) for x in range(width) for y in (range(height) if x % 2 == 0 else range(height - 1, -1, -1))]
-          assert len(set(path)) == width * height
-          assert all(0 <= x < width and 0 <= y < height for x, y in path)
-          assert all(abs(a[0]-b[0]) + abs(a[1]-b[1]) == 1 for a, b in zip(path, path[1:]))
-          length = 5
-          frames = len(path) + length + 3
-          for k in range(frames):
-              body = [path[k-j] for j in range(length) if 0 <= k-j < len(path)]
-              assert len(set(body)) == len(body), 'Self collision'
-          step, size, pad = 16, 12, 8
-          duration = '54s'
-          order = {p: i for i, p in enumerate(path)}
-          Path('dist').mkdir(exist_ok=True)
-          for dark in (False, True):
-              palette = ['#161b22','#2e1065','#5b21b6','#7c3aed','#a78bfa'] if dark else ['#ebedf0','#ddd6fe','#c4b5fd','#8b5cf6','#6d28d9']
-              snake = '#c4b5fd' if dark else '#7c3aed'
-              svg = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width*step+pad*2} {height*step+pad*2}" role="img"><title>Contribuicoes de diangellis: cobrinha dentro da grade</title>']
-              for x in range(width):
-                  for y in range(height):
-                      color = palette[cells.get((x,y),0)]
-                      svg.append(f'<rect x="{pad+x*step}" y="{pad+y*step}" width="{size}" height="{size}" rx="2" fill="{color}">')
-                      if cells.get((x,y),0):
-                          eaten = (order[(x,y)] + 0.5) / frames
-                          svg.append(f'<animate attributeName="fill" values="{color};{palette[0]};{palette[0]}" keyTimes="0;{eaten:.7f};1" dur="{duration}" repeatCount="indefinite" calcMode="discrete"/>')
-                      svg.append('</rect>')
-              times = ';'.join(f'{k/frames:.7f}' for k in range(frames+1))
-              for j in range(length-1, -1, -1):
-                  positions = [path[max(0,min(len(path)-1,k-j))] for k in range(frames+1)]
-                  xs = ';'.join(str(pad+x*step) for x,y in positions)
-                  ys = ';'.join(str(pad+y*step) for x,y in positions)
-                  opacity = ';'.join('1' if 0 <= k-j < len(path) else '0' for k in range(frames+1))
-                  svg.append(f'<rect width="{size}" height="{size}" rx="3" fill="{snake}" opacity="0">')
-                  for attr, values in [('x',xs),('y',ys),('opacity',opacity)]:
-                      svg.append(f'<animate attributeName="{attr}" values="{values}" keyTimes="{times}" dur="{duration}" repeatCount="indefinite" calcMode="discrete"/>')
-                  svg.append('</rect>')
-              svg.append('</svg>')
-              content = ''.join(svg)
-              ET.fromstring(content)
-              target = 'dist/github-snake-dark.svg' if dark else 'dist/github-snake.svg'
-              Path(target).write_text(content, encoding='utf-8')
-          print(f'Validated {len(path)} cells: all moves adjacent, inside grid, without self collisions. Both SVGs generated.')
-          PY
       - name: Salvar animacoes
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add dist/*.svg
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'Atualiza cobrinha limitada a grade'
+          git commit -m 'Atualiza animacao das contribuicoes'
           git pull --rebase origin main
           git push origin HEAD:main
