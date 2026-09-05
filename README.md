@@ -53,7 +53,7 @@ Dedico-me à pesquisa acadêmica por meio de **Iniciação Científica**, com in
 
 <br><br>
 
-<a href="https://www.linkedin.com/in/gabriel-ferreira-011356385/"><img alt="Vamos conversar no LinkedIn" src="https://img.shields.io/badge/Vamos_conversar_no_LinkedIn-6D28D9?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"></a>
+<a href="https://www.linkedin.com/in/gabriel-ferreira-222591397/"><img alt="Vamos conversar no LinkedIn" src="https://img.shields.io/badge/Vamos_conversar_no_LinkedIn-6D28D9?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"></a>
 
 <img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:A78BFA,50:6D28D9,100:2E1065&amp;height=100&amp;section=footer">
 
